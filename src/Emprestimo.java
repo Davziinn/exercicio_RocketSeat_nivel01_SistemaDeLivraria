@@ -17,6 +17,9 @@ public class Emprestimo {
         this.ativo = true;
     }
 
+    public Emprestimo(Livro livro, String nomeUsuario) {
+    }
+
     public int getId() {
         return id;
     }
@@ -83,5 +86,11 @@ public class Emprestimo {
                 ", dataDevolucao=" + dataDevolucao +
                 ", ativo=" + ativo +
                 '}';
+    }
+
+    public void devolverLivro() {
+        this.dataDevolucao = new Date();
+        this.ativo = false;
+        this.livro.setDisponivel(true);
     }
 }
