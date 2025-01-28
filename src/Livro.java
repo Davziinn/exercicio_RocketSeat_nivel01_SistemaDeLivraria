@@ -8,7 +8,7 @@ public class Livro {
     private Date dataCadastro;
     private Date dataAtualizado;
 
-    public Livro(int id, String titulo, Autor autor, boolean disponivel, Date dataAtualizado, Date dataCadastro) {
+    public Livro(int id, String titulo, Autor autor) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
